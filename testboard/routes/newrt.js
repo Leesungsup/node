@@ -7,4 +7,7 @@ router.get("/",function(req,res,next){
         blog: "tistory.org",
         homepage: 'gcorder.net'});
 });
+router.post("/",function(req,res,next){
+    res.json(req.body);
+});
 module.exports=router;
